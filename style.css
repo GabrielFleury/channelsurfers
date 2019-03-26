@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+* { margin:0; padding:0; }
+article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+a img{ border-style:none;}
+
+
+
+.video-container {
+	position:relative;
+	padding-bottom:50.6%;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:5%;
+	width:90%;
+	height:100%;
+}
+
+#warning{
+	width:100%;
+	text-align:center;
+	font-size: 40px;
+	padding-top: 50px;
+}
+
+html{
+	background: #26282c;
+	font-family: Calibri, Arial, sans-serif;
+	color: #e4e0e0;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+#top{
+	width: 100%;
+	height: 168px;
+	background: #1a1b1f url("img/bg_header.png") center repeat-x;
+}
+
+header{
+	margin: 0 auto;
+	height: 168px;
+	width: 1400px;
+	color: #e4e0e0;
+	background: #1a1b1f url("img/bg_header.png") center repeat-x;
+}
+
+
+#logo{
+	float: left;
+	width: 211px;
+	height: 146px;
+	margin-top: 10px;
+	margin-left: 10%;
+	color: #008bbd;
+}
+h1{
+	clear: both;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 3em;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	color: #008bbd;
+}
+h2{
+	clear: both;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 2.5em;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+}
+h3{
+	font-size: 1.3em;
+	font-family: Arial, sans-serif;
+}
+p{
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+li{
+	font-size: 1.1em;
+}
+a{
+	color: #008abf;
+}
+a:hover{
+	color: #3fb9e7;
+}
+
+nav{
+	float: right;
+	margin-right: 50px;
+	margin-top: 115px;
+	text-align: right;
+	font-size: 2em;
+	font-family: Arial, sans-serif;
+}
+
+nav a{
+	color: #e4e0e0;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #36eff1;
+	text-decoration: underline;
+}
+#btnResume{
+	float: right;
+    font-size: 1em;
+    margin-bottom: 80px;
+}
+.navBtn{
+	margin-left: 40px;
+    float: left;
+}
+#btnNav1{
+	clear: both;
+}
+	
+.navCurrent{
+	text-decoration: underline;
+}
+
+#content{
+	width:1200px;
+	height:300px;
+	margin: 130px auto 0;
+}
+#mainContent{
+	width:1200px;
+	height:300px;
+	margin: 30px auto 0;
+}
+
+.projectThumbLink{
+	display: block;
+	position: relative;
+    width: 600px;
+    float: left;
+    height: 275px;
+    color: #e4e0e0;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.thumbDesc{
+	position: absolute;
+	bottom: 0;
+    padding: 0 0 10px 20px;
+}
+
+.hoverBorder{
+   position: absolute;
+   width: inherit;
+   height: inherit;
+}
+.projectThumbLink:hover .hoverBorder{
+    background: url('img/lazyborder.png');
+}
+
+
+#cv{
+	position:absolute;
+	top:35px;
+	right:0;
+	width:85px;
+	width:110px;
+}
+
+.showcase_container{
+	clear:both;
+	position:relative;
+}
+.showcase{
+    display: block;
+    margin: 0 auto;
+	width:100%;
+	height: auto;
+}
+
+.side-left{
+	float: left;
+	margin-bottom: 30px;
+}
+.side-right{
+	float: right;
+	margin-bottom: 30px;
+}
+
+.bulletpoints_container{
+	padding-left: 25px;
+}
+
+.bulletpoints_container ul{
+	margin-left: 16px;
+}
+
+.pinklist b{
+	color: #ca2acc;
+}
+
+
+.expand{
+	opacity: 0;
+	position: absolute;
+    bottom: 10px;
+    left: 48%;
+}
+
+.showcase:hover + .expand { opacity: 1; }
+.expand:hover { opacity: 1; }
+.60percent { width: 60%; }
+
+
+
+
+/*///// Slider sizes /////*/
+.sliderBrutaliste ul li{
+  width: 600px;
+  height: 337px;
+}
+.sliderRox ul li{
+  width: 750px;
+  height: 422px;
+}
+
+/*///// main slider stuff /////*/
+#slider, #slider2 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 20px auto;
+  border-radius: 4px;
+  clear: both;
+}
+
+#slider ul, #slider2 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li, #slider2 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+#slider img, #slider2 img{
+	width:100%;
+}
+
+a.control_prev, a.control_next, a.control_prev2, a.control_next2 {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #26282c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover, a.control_prev2:hover, a.control_next2:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev, a.control_prev2 {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next, a.control_next2 {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option, .slider_option2 {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+
+/* animation code */
+@keyframes alienanim {
+    from {margin-top: -85px; opacity: 0;}
+    to {margin-top: 40px; opacity: 1;}
+}
+
+
+
+
+/*///// responsive stuff /////*/
+@media screen and (max-width: 1400px){
+	header{
+		width: 100%;
+	}
+	
+	
+}
+
+@media screen and (max-width: 1270px){
+	#content, #mainContent{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	header:after{
+		content: "";
+		display: block;
+		background: url("img/alien.png") no-repeat;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
+	}
+}
+
+@media screen and (max-width: 800px){	
+	h1{
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		margin: 0;
+	}
+	
+	nav{
+		margin-right: 15px;
+	}
+	nav a{
+		clear: both;
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+	.navBtn{
+		float: right;
+	}
+	#btnResume{
+		clear: both;
+		margin-bottom: 10px;
+	}
+	#cv{
+		position: static;
+	}
+	#content{
+		width: 90%;
+	}
+	
+	.side-left{
+		clear:both;
+		width:100% !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+	}
+	.side-right{
+		clear:both;
+		width:100% !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+	}
+}
